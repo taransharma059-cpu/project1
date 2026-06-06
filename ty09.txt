@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mango Royale | Luxury Mango Collection</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Georgia, serif;
+    background:#0b0b0b;
+    color:#f5f0e8;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(0,0,0,0.9);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #d4af37;
+}
+
+nav{
+    max-width:1400px;
+    margin:auto;
+    padding:20px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    color:#d4af37;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+    font-size:15px;
+    letter-spacing:1px;
+}
+
+nav ul li a:hover{
+    color:#d4af37;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+    url("images/image.png");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:80px;
+    color:#d4af37;
+    margin-bottom:20px;
+    letter-spacing:4px;
+}
+
+.hero-content p{
+    font-size:24px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 40px;
+    border:2px solid #d4af37;
+    color:#d4af37;
+    transition:.4s;
+}
+
+.btn:hover{
+    background:#d4af37;
+    color:black;
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:50px;
+    color:#d4af37;
+    margin-bottom:50px;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:10px;
+}
+
+.about-text p{
+    line-height:2;
+    font-size:18px;
+}
+
+/* COLLECTION */
+
+.collection-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.mango-card{
+    background:#111;
+    border:1px solid #d4af37;
+    padding:35px;
+    text-align:center;
+    transition:.4s;
+}
+
+.mango-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(212,175,55,.35);
+}
+
+.mango-card h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+/* FEATURES */
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.feature{
+    background:#111;
+    padding:35px;
+    text-align:center;
+    border-left:4px solid #d4af37;
+}
+
+.feature h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    font-size:18px;
+    margin:15px 0;
+}
+
+/* FOOTER */
+
+footer{
+    background:black;
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #d4af37;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+.hero-content h1{
+    font-size:50px;
+}
+
+.collection-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.features-grid{
+    grid-template-columns:1fr;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+}
+
+@media(max-width:600px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.collection-grid{
+    grid-template-columns:1fr;
+}
+
+.hero-content h1{
+    font-size:40px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">MANGO ROYALE</div>
+
+<ul>
+<li><a href="#home">HOME</a></li>
+<li><a href="#about">HERITAGE</a></li>
+<li><a href="#collection">COLLECTION</a></li>
+<li><a href="#features">EXCLUSIVITY</a></li>
+<li><a href="#contact">CONTACT</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>MANGO ROYALE</h1>
+
+<p>
+Luxury In Every Bite.
+Hand-selected premium mangoes crafted by nature
+and delivered with elegance.
+</p>
+
+<a href="#collection" class="btn">Explore Collection</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">Our Heritage</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1591073113125-e46713c829ed?auto=format&fit=crop&w=1200&q=80">
+
+<div class="about-text">
+
+<p>
+At Mango Royale, we believe that mangoes deserve the same prestige as the finest luxury products. Every fruit is carefully selected from trusted orchards and presented with elegance, quality, and excellence.
+</p>
+
+<br>
+
+<p>
+From orchard to table, our mission is to redefine the mango experience through premium quality, sophisticated presentation, and unmatched freshness.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="collection">
+
+<h2 class="section-title">Signature Collection</h2>
+
+<div class="collection-grid">
+
+<div class="mango-card"><h3>Alphonso</h3><p>King of Mangoes</p></div>
+<div class="mango-card"><h3>Kesar</h3><p>Rich Sweet Aroma</p></div>
+<div class="mango-card"><h3>Dasheri</h3><p>Elegant Flavor</p></div>
+<div class="mango-card"><h3>Langra</h3><p>Traditional Excellence</p></div>
+
+<div class="mango-card"><h3>Chausa</h3><p>Juicy Delight</p></div>
+<div class="mango-card"><h3>Banganapalli</h3><p>Premium Variety</p></div>
+<div class="mango-card"><h3>Himsagar</h3><p>Sweet Perfection</p></div>
+<div class="mango-card"><h3>Totapuri</h3><p>Refreshing Taste</p></div>
+
+<div class="mango-card"><h3>Amrapali</h3><p>Deep Flavor</p></div>
+<div class="mango-card"><h3>Mallika</h3><p>Luxury Selection</p></div>
+<div class="mango-card"><h3>Neelam</h3><p>Late Season Premium</p></div>
+<div class="mango-card"><h3>Fazli</h3><p>Large & Delicious</p></div>
+
+<div class="mango-card"><h3>Imam Pasand</h3><p>Rare Excellence</p></div>
+<div class="mango-card"><h3>Raspuri</h3><p>Rich Aroma</p></div>
+<div class="mango-card"><h3>Mankurad</h3><p>Goan Treasure</p></div>
+<div class="mango-card"><h3>Pairi</h3><p>Classic Elegance</p></div>
+
+</div>
+
+</section>
+
+<section id="features">
+
+<h2 class="section-title">Why Choose Us</h2>
+
+<div class="features-grid">
+
+<div class="feature">
+<h3>🌟 Handpicked Quality</h3>
+<p>Only the finest mangoes make it to our collection.</p>
+</div>
+
+<div class="feature">
+<h3>🚚 Farm Fresh Delivery</h3>
+<p>Directly sourced and delivered with care.</p>
+</div>
+
+<div class="feature">
+<h3>🎁 Luxury Packaging</h3>
+<p>Beautiful presentation worthy of gifting.</p>
+</div>
+
+<div class="feature">
+<h3>🌱 Sustainable Farming</h3>
+<p>Supporting responsible agriculture.</p>
+</div>
+
+<div class="feature">
+<h3>🏆 Export Grade Fruits</h3>
+<p>Premium quality standards maintained.</p>
+</div>
+
+<div class="feature">
+<h3>💎 Exclusive Experience</h3>
+<p>A luxury approach to enjoying mangoes.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<p>📧 info@mangoroyale.com</p>
+<p>📞 +91 XXXXX XXXXX</p>
+<p>📍 Premium Mango Orchards, India</p>
+
+</section>
+
+<footer>
+<p>© 2026 Mango Royale | Luxury Mango Collection</p>
+</footer>
+
+</body>
+</html>
