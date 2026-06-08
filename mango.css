@@ -203,8 +203,7 @@
     overflow: hidden;
 }
 .s1{
-    background-color:grey ;
-    outline: solid rgb(255, 255, 255) 0.1px;
+    
     border-radius: 20%;
     object-fit: cover;
     height: 200px;
@@ -213,5 +212,30 @@
 
 }
 .s1:hover{
+     transform: scale(1.1);
+}
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #000000;
+    gap:30px;
+    padding:50px;
+    
+}
+.f2{
+    border-radius: 20px;
+    object-fit: cover;
+    gap: 30px;
+    background-color: grey;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    outline: solid white 0.1px;
+     transition: transform .2s;
+}
+.f2:hover{
      transform: scale(1.1);
 }
