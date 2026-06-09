@@ -1,65 +1,57 @@
 .header{
-    width:100%;
-    height:70px;
-    background:#16171a;
-    outline: 2px solid rgba(212, 175, 55, 0.3);
+      width:100%;
+    min-height:60px;
+    background:black;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 60px;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:1000;
+    flex-wrap:wrap;
+    padding:10px 20px;
     box-sizing:border-box;
-
+    outline: #FF9F1C solid 1px;
 }
 
 .logo{
-    color:#f5c542;
-    font-size:28px;
+      color:#FF9F1C;
+    font-size:24px;
     font-weight:bold;
-    gap:3px; 
-    font-family:Arial, Helvetica, sans-serif;
 }
 
-.mnb{
+.menu{
     display:flex;
-    gap:35px;
+    flex-wrap:wrap;
+    gap:15px;
+    text-decoration: none;
 }
 
-.mnb a{
+.menu a{
+        color:white;
+    text-decoration:none;
+    font-size:14px;
    
-    color:white;
-    font-size:16px;
-  
-    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
 }
 
 
-.shop-btn{
-    padding:10px 22px;
-    border:none;
-    background:#f5c542;
-    color:black;
-    font-weight:bold;
-  transition: transform .1s;
-    border-radius:30px;
-  
+.btn01 button{
+     padding:8px 15px;
+    background:gold;
+    border:0.1px solid black;
+    cursor:pointer;
+    border-radius:20px;
 }
-.shop-btn:hover{
-  transform: scale(1.1);
+.btn01:hover {
+    transform: scale(1.1);
+
 }
-
-
-
-
-
 .banner {
     height: 100vh;
     width: 100vw;
     background-color: cadetblue;
-    margin-top: 60px;
+    
     position: relative;
     overflow: hidden;
     left: 0;
@@ -167,8 +159,9 @@ width: 100%;
     outline: solid white 1px;
     text-align: center;
     transition: transform .2s;
+    position: relative;
+    
 }
-
 .mangoes:hover {
     transform: scale(1.1)
 }
@@ -199,7 +192,7 @@ width: 100%;
     font-weight: bolder;
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    border: 1px solid white;
     color: #D4AF37;
 
 }
@@ -251,6 +244,7 @@ width: 100%;
     gap: 30px;
     padding: 50px;
     overflow: hidden;
+    outline: solid white 0.1px;
 }
 
 .s1 {
@@ -272,6 +266,7 @@ width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     background-color: #000000;
     gap: 30px;
+    outline: solid white 0.1px;
     padding: 50px;
 
 }
@@ -394,4 +389,7 @@ strong{
     outline: #FF9F1C solid 1px;
      overflow: hidden;
     object-fit: cover;
+}
+.footer h1{
+
 }
